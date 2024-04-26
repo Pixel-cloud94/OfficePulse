@@ -20,42 +20,25 @@ namespace OfficePulse
         public Form3()
         {
             InitializeComponent();
+            
+            dataGridViewUsers.Columns["username"].DataPropertyName = "username";
+            dataGridViewUsers.Columns["firstname"].DataPropertyName = "firstname";
+            dataGridViewUsers.Columns["lastname"].DataPropertyName = "lastname";
+            dataGridViewUsers.Columns["department"].DataPropertyName = "department_name";
+            dataGridViewUsers.Columns["jobtitle"].DataPropertyName = "role_name";
 
-            dataGridViewUsers.Rows.Add( //Test Data
-               new object[]
-               {
-                       "ti.dersch",
-                       "Tim",
-                       "Dersch",
-                       "IT",
-                       "Software Developer"
-               }
-               );
-            dataGridViewUsers.Rows.Add(
-                new object[]
-                {
-                       "ka.dobel",
-                       "Katharina",
-                       "Dobel",
-                       "HR",
-                       "Secretary"
-                }
-                );
-            dataGridViewUsers.Rows.Add(
-                new object[]
-                {
-                       "pa.yildiz",
-                       "Pailin",
-                       "Yildiz",
-                       "IT",
-                       "Project Manager"
-                }
-            );
+            User user = new User();
+            DataTable users = user.fillDgvUser();
+            dataGridViewUsers.DataSource = users;
+
+            //StatData.ConfigureMonthlyChartYAxis(MonthlyChart);
+            //StatData.ConfigureMonthlyChartXAxis(MonthlyChart);
+            //MonthlyChart.Series.Add(StatData.CreateLineSeries("IT", new ChartValues<double> { 20,14,33,45,44,46}));
+           
 
             
 
-           
-                MonthlyChart.Series.Add(new LineSeries //Lines with Data Points Monthly
+            MonthlyChart.Series.Add(new LineSeries //Lines with Data Points Monthly
             {
                 Title = "IT",
                 Values = new ChartValues<double> {38, 24, 46, 50 },
@@ -258,7 +241,7 @@ namespace OfficePulse
                     Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(64, 79, 86))
                 }
             });
-
+            
 
 
         }
@@ -291,8 +274,11 @@ namespace OfficePulse
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e) //DeleteUser
         {
+            User user = new User();
+            string username = dataGridViewUsers.SelectedRows[0].Cells["username"].Value.ToString();
+            user.deleteUser(username);
 
         }
 
@@ -322,8 +308,9 @@ namespace OfficePulse
 
         private void buttonStatistics_Click(object sender, EventArgs e)
         {
-            UserPanel.Hide();
             StatisticsPanel.Show();
+            UserPanel.Hide();
+            
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -357,6 +344,21 @@ namespace OfficePulse
         }
 
         private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void participitationChart_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
         {
 
         }

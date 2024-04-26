@@ -41,21 +41,13 @@
             this.buttonUserPanel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.UserPanel = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.buttonChangeUser = new System.Windows.Forms.Button();
-            this.buttonDeleteUser = new System.Windows.Forms.Button();
-            this.buttonAddUser = new System.Windows.Forms.Button();
-            this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
-            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.department = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jobtitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.searchBar = new System.Windows.Forms.TextBox();
             this.StatisticsPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -87,30 +79,38 @@
             this.MonthlyChart = new LiveCharts.WinForms.CartesianChart();
             this.label7 = new System.Windows.Forms.Label();
             this.labelDetailChart = new System.Windows.Forms.Label();
+            this.UserPanel = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonChangeUser = new System.Windows.Forms.Button();
+            this.buttonDeleteUser = new System.Windows.Forms.Button();
+            this.buttonAddUser = new System.Windows.Forms.Button();
+            this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
+            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.department = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jobtitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.searchBar = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.UserPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             this.StatisticsPanel.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.ParticipitationSection.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.UserPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -237,206 +237,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // UserPanel
-            // 
-            this.UserPanel.Controls.Add(this.label8);
-            this.UserPanel.Controls.Add(this.label3);
-            this.UserPanel.Controls.Add(this.buttonChangeUser);
-            this.UserPanel.Controls.Add(this.buttonDeleteUser);
-            this.UserPanel.Controls.Add(this.buttonAddUser);
-            this.UserPanel.Controls.Add(this.dataGridViewUsers);
-            this.UserPanel.Controls.Add(this.searchBar);
-            this.UserPanel.Location = new System.Drawing.Point(320, 52);
-            this.UserPanel.Name = "UserPanel";
-            this.UserPanel.Size = new System.Drawing.Size(856, 685);
-            this.UserPanel.TabIndex = 2;
-            this.UserPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UserPanel_Paint);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Calibri", 16.5F);
-            this.label8.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label8.Location = new System.Drawing.Point(15, 15);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(153, 35);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "USER PANEL";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Calibri", 10F);
-            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(85, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 21);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "SEARCH";
-            // 
-            // buttonChangeUser
-            // 
-            this.buttonChangeUser.BackColor = System.Drawing.Color.Transparent;
-            this.buttonChangeUser.FlatAppearance.BorderSize = 0;
-            this.buttonChangeUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonChangeUser.Font = new System.Drawing.Font("Calibri", 10F);
-            this.buttonChangeUser.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.buttonChangeUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonChangeUser.Image")));
-            this.buttonChangeUser.Location = new System.Drawing.Point(330, 564);
-            this.buttonChangeUser.Name = "buttonChangeUser";
-            this.buttonChangeUser.Size = new System.Drawing.Size(198, 42);
-            this.buttonChangeUser.TabIndex = 5;
-            this.buttonChangeUser.Text = "CHANGE USER";
-            this.buttonChangeUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonChangeUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonChangeUser.UseVisualStyleBackColor = false;
-            // 
-            // buttonDeleteUser
-            // 
-            this.buttonDeleteUser.BackColor = System.Drawing.Color.Transparent;
-            this.buttonDeleteUser.FlatAppearance.BorderSize = 0;
-            this.buttonDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDeleteUser.Font = new System.Drawing.Font("Calibri", 10F);
-            this.buttonDeleteUser.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.buttonDeleteUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonDeleteUser.Image")));
-            this.buttonDeleteUser.Location = new System.Drawing.Point(330, 612);
-            this.buttonDeleteUser.Name = "buttonDeleteUser";
-            this.buttonDeleteUser.Size = new System.Drawing.Size(198, 42);
-            this.buttonDeleteUser.TabIndex = 4;
-            this.buttonDeleteUser.Text = "DELETE USER";
-            this.buttonDeleteUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonDeleteUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonDeleteUser.UseVisualStyleBackColor = false;
-            this.buttonDeleteUser.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // buttonAddUser
-            // 
-            this.buttonAddUser.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAddUser.FlatAppearance.BorderSize = 0;
-            this.buttonAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddUser.Font = new System.Drawing.Font("Calibri", 10F);
-            this.buttonAddUser.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.buttonAddUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonAddUser.Image")));
-            this.buttonAddUser.Location = new System.Drawing.Point(330, 516);
-            this.buttonAddUser.Name = "buttonAddUser";
-            this.buttonAddUser.Size = new System.Drawing.Size(198, 42);
-            this.buttonAddUser.TabIndex = 3;
-            this.buttonAddUser.Text = "ADD USER";
-            this.buttonAddUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAddUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonAddUser.UseVisualStyleBackColor = false;
-            this.buttonAddUser.Click += new System.EventHandler(this.buttonAddUser_Click);
-            // 
-            // dataGridViewUsers
-            // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.dataGridViewUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridViewUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewUsers.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridViewUsers.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewUsers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridViewUsers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridViewUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridViewUsers.ColumnHeadersHeight = 40;
-            this.dataGridViewUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.username,
-            this.firstname,
-            this.lastname,
-            this.department,
-            this.jobtitle});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semilight", 8F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewUsers.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridViewUsers.EnableHeadersVisualStyles = false;
-            this.dataGridViewUsers.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridViewUsers.Location = new System.Drawing.Point(89, 126);
-            this.dataGridViewUsers.Name = "dataGridViewUsers";
-            this.dataGridViewUsers.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridViewUsers.RowHeadersVisible = false;
-            this.dataGridViewUsers.RowHeadersWidth = 51;
-            this.dataGridViewUsers.RowTemplate.DividerHeight = 2;
-            this.dataGridViewUsers.RowTemplate.Height = 30;
-            this.dataGridViewUsers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewUsers.Size = new System.Drawing.Size(677, 374);
-            this.dataGridViewUsers.TabIndex = 7;
-            this.dataGridViewUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // username
-            // 
-            this.username.HeaderText = "Username";
-            this.username.MinimumWidth = 6;
-            this.username.Name = "username";
-            this.username.ReadOnly = true;
-            this.username.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // firstname
-            // 
-            this.firstname.HeaderText = "First Name";
-            this.firstname.MinimumWidth = 6;
-            this.firstname.Name = "firstname";
-            this.firstname.ReadOnly = true;
-            this.firstname.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // lastname
-            // 
-            this.lastname.HeaderText = "Last Name";
-            this.lastname.MinimumWidth = 6;
-            this.lastname.Name = "lastname";
-            this.lastname.ReadOnly = true;
-            this.lastname.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // department
-            // 
-            this.department.HeaderText = "Department";
-            this.department.MinimumWidth = 6;
-            this.department.Name = "department";
-            this.department.ReadOnly = true;
-            this.department.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // jobtitle
-            // 
-            this.jobtitle.HeaderText = "Job Title";
-            this.jobtitle.MinimumWidth = 6;
-            this.jobtitle.Name = "jobtitle";
-            this.jobtitle.ReadOnly = true;
-            this.jobtitle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // searchBar
-            // 
-            this.searchBar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.searchBar.Font = new System.Drawing.Font("Calibri", 10F);
-            this.searchBar.Location = new System.Drawing.Point(156, 82);
-            this.searchBar.Name = "searchBar";
-            this.searchBar.Size = new System.Drawing.Size(610, 21);
-            this.searchBar.TabIndex = 7;
-            this.searchBar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // StatisticsPanel
             // 
@@ -449,7 +250,7 @@
             this.StatisticsPanel.Controls.Add(this.panel4);
             this.StatisticsPanel.Controls.Add(this.ParticipitationSection);
             this.StatisticsPanel.Controls.Add(this.panel5);
-            this.StatisticsPanel.Location = new System.Drawing.Point(320, 52);
+            this.StatisticsPanel.Location = new System.Drawing.Point(0, 0);
             this.StatisticsPanel.Name = "StatisticsPanel";
             this.StatisticsPanel.Size = new System.Drawing.Size(856, 685);
             this.StatisticsPanel.TabIndex = 9;
@@ -471,6 +272,61 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(797, 42);
             this.panel3.TabIndex = 9;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(720, 11);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 9;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(531, 11);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 8;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(168, 11);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 7;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(345, 11);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 6;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(14, 11);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
             // 
             // label16
             // 
@@ -563,6 +419,7 @@
             this.participitationChart.Size = new System.Drawing.Size(175, 153);
             this.participitationChart.TabIndex = 10;
             this.participitationChart.Text = "pieChart1";
+            this.participitationChart.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.participitationChart_ChildChanged);
             // 
             // label9
             // 
@@ -606,6 +463,7 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -872,6 +730,207 @@
             this.labelDetailChart.TabIndex = 5;
             this.labelDetailChart.Text = "Details of the last 27 Days";
             // 
+            // UserPanel
+            // 
+            this.UserPanel.Controls.Add(this.StatisticsPanel);
+            this.UserPanel.Controls.Add(this.label8);
+            this.UserPanel.Controls.Add(this.label3);
+            this.UserPanel.Controls.Add(this.buttonChangeUser);
+            this.UserPanel.Controls.Add(this.buttonDeleteUser);
+            this.UserPanel.Controls.Add(this.buttonAddUser);
+            this.UserPanel.Controls.Add(this.dataGridViewUsers);
+            this.UserPanel.Controls.Add(this.searchBar);
+            this.UserPanel.Location = new System.Drawing.Point(320, 52);
+            this.UserPanel.Name = "UserPanel";
+            this.UserPanel.Size = new System.Drawing.Size(856, 685);
+            this.UserPanel.TabIndex = 2;
+            this.UserPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UserPanel_Paint);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Calibri", 16.5F);
+            this.label8.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label8.Location = new System.Drawing.Point(15, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(153, 35);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "USER PANEL";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Calibri", 10F);
+            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label3.Location = new System.Drawing.Point(85, 82);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 21);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "SEARCH";
+            // 
+            // buttonChangeUser
+            // 
+            this.buttonChangeUser.BackColor = System.Drawing.Color.Transparent;
+            this.buttonChangeUser.FlatAppearance.BorderSize = 0;
+            this.buttonChangeUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChangeUser.Font = new System.Drawing.Font("Calibri", 10F);
+            this.buttonChangeUser.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.buttonChangeUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonChangeUser.Image")));
+            this.buttonChangeUser.Location = new System.Drawing.Point(330, 564);
+            this.buttonChangeUser.Name = "buttonChangeUser";
+            this.buttonChangeUser.Size = new System.Drawing.Size(198, 42);
+            this.buttonChangeUser.TabIndex = 5;
+            this.buttonChangeUser.Text = "CHANGE USER";
+            this.buttonChangeUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonChangeUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonChangeUser.UseVisualStyleBackColor = false;
+            // 
+            // buttonDeleteUser
+            // 
+            this.buttonDeleteUser.BackColor = System.Drawing.Color.Transparent;
+            this.buttonDeleteUser.FlatAppearance.BorderSize = 0;
+            this.buttonDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDeleteUser.Font = new System.Drawing.Font("Calibri", 10F);
+            this.buttonDeleteUser.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.buttonDeleteUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonDeleteUser.Image")));
+            this.buttonDeleteUser.Location = new System.Drawing.Point(330, 612);
+            this.buttonDeleteUser.Name = "buttonDeleteUser";
+            this.buttonDeleteUser.Size = new System.Drawing.Size(198, 42);
+            this.buttonDeleteUser.TabIndex = 4;
+            this.buttonDeleteUser.Text = "DELETE USER";
+            this.buttonDeleteUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonDeleteUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonDeleteUser.UseVisualStyleBackColor = false;
+            this.buttonDeleteUser.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // buttonAddUser
+            // 
+            this.buttonAddUser.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAddUser.FlatAppearance.BorderSize = 0;
+            this.buttonAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddUser.Font = new System.Drawing.Font("Calibri", 10F);
+            this.buttonAddUser.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.buttonAddUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonAddUser.Image")));
+            this.buttonAddUser.Location = new System.Drawing.Point(330, 516);
+            this.buttonAddUser.Name = "buttonAddUser";
+            this.buttonAddUser.Size = new System.Drawing.Size(198, 42);
+            this.buttonAddUser.TabIndex = 3;
+            this.buttonAddUser.Text = "ADD USER";
+            this.buttonAddUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAddUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonAddUser.UseVisualStyleBackColor = false;
+            this.buttonAddUser.Click += new System.EventHandler(this.buttonAddUser_Click);
+            // 
+            // dataGridViewUsers
+            // 
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.dataGridViewUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewUsers.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridViewUsers.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewUsers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridViewUsers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridViewUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewUsers.ColumnHeadersHeight = 40;
+            this.dataGridViewUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.username,
+            this.firstname,
+            this.lastname,
+            this.department,
+            this.jobtitle});
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semilight", 8F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewUsers.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewUsers.EnableHeadersVisualStyles = false;
+            this.dataGridViewUsers.GridColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridViewUsers.Location = new System.Drawing.Point(89, 126);
+            this.dataGridViewUsers.Name = "dataGridViewUsers";
+            this.dataGridViewUsers.ReadOnly = true;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewUsers.RowHeadersVisible = false;
+            this.dataGridViewUsers.RowHeadersWidth = 51;
+            this.dataGridViewUsers.RowTemplate.DividerHeight = 2;
+            this.dataGridViewUsers.RowTemplate.Height = 30;
+            this.dataGridViewUsers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewUsers.Size = new System.Drawing.Size(677, 374);
+            this.dataGridViewUsers.TabIndex = 7;
+            this.dataGridViewUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // username
+            // 
+            this.username.HeaderText = "Username";
+            this.username.MinimumWidth = 6;
+            this.username.Name = "username";
+            this.username.ReadOnly = true;
+            this.username.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // firstname
+            // 
+            this.firstname.HeaderText = "First Name";
+            this.firstname.MinimumWidth = 6;
+            this.firstname.Name = "firstname";
+            this.firstname.ReadOnly = true;
+            this.firstname.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // lastname
+            // 
+            this.lastname.HeaderText = "Last Name";
+            this.lastname.MinimumWidth = 6;
+            this.lastname.Name = "lastname";
+            this.lastname.ReadOnly = true;
+            this.lastname.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // department
+            // 
+            this.department.HeaderText = "Department";
+            this.department.MinimumWidth = 6;
+            this.department.Name = "department";
+            this.department.ReadOnly = true;
+            this.department.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // jobtitle
+            // 
+            this.jobtitle.HeaderText = "Job Title";
+            this.jobtitle.MinimumWidth = 6;
+            this.jobtitle.Name = "jobtitle";
+            this.jobtitle.ReadOnly = true;
+            this.jobtitle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // searchBar
+            // 
+            this.searchBar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.searchBar.Font = new System.Drawing.Font("Calibri", 10F);
+            this.searchBar.Location = new System.Drawing.Point(156, 82);
+            this.searchBar.Name = "searchBar";
+            this.searchBar.Size = new System.Drawing.Size(610, 21);
+            this.searchBar.TabIndex = 7;
+            this.searchBar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Transparent;
@@ -901,61 +960,6 @@
             this.button9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button9.UseVisualStyleBackColor = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(14, 11);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(345, 11);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(168, 11);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 7;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(531, 11);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 8;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(720, 11);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -963,7 +967,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1194, 749);
-            this.Controls.Add(this.StatisticsPanel);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.panel1);
@@ -973,18 +976,20 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "forms c\'";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.UserPanel.ResumeLayout(false);
-            this.UserPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).EndInit();
             this.StatisticsPanel.ResumeLayout(false);
             this.StatisticsPanel.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -995,11 +1000,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.UserPanel.ResumeLayout(false);
+            this.UserPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).EndInit();
             this.ResumeLayout(false);
 
         }

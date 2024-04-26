@@ -42,13 +42,15 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.sToggleButton1 = new Sipaa.Framework.SToggleButton();
+            this.buttonCEO = new System.Windows.Forms.Button();
+            this.buttonCS = new System.Windows.Forms.Button();
+            this.buttonIT = new System.Windows.Forms.Button();
+            this.buttonSM = new System.Windows.Forms.Button();
+            this.buttonAF = new System.Windows.Forms.Button();
+            this.buttonPO = new System.Windows.Forms.Button();
+            this.AdminToggle = new Sipaa.Framework.SToggleButton();
+            this.comboBoxRole = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxFirstName
@@ -141,7 +143,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 10F);
             this.label5.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label5.Location = new System.Drawing.Point(12, 241);
+            this.label5.Location = new System.Drawing.Point(12, 293);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 21);
             this.label5.TabIndex = 9;
@@ -204,106 +206,135 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 10F);
             this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label6.Location = new System.Drawing.Point(12, 348);
+            this.label6.Location = new System.Drawing.Point(12, 378);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 21);
             this.label6.TabIndex = 15;
             this.label6.Text = "ADMIN";
             // 
-            // button1
+            // buttonCEO
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 10F);
-            this.button1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.button1.Location = new System.Drawing.Point(157, 241);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 36);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "CEO";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonCEO.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCEO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCEO.Font = new System.Drawing.Font("Calibri", 10F);
+            this.buttonCEO.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.buttonCEO.Location = new System.Drawing.Point(157, 293);
+            this.buttonCEO.Name = "buttonCEO";
+            this.buttonCEO.Size = new System.Drawing.Size(75, 36);
+            this.buttonCEO.TabIndex = 16;
+            this.buttonCEO.Text = "CEO";
+            this.buttonCEO.UseVisualStyleBackColor = false;
+            this.buttonCEO.Click += new System.EventHandler(this.buttonCEO_Click);
             // 
-            // button2
+            // buttonCS
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 10F);
-            this.button2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.button2.Location = new System.Drawing.Point(238, 241);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 36);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "CS";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonCS.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCS.Font = new System.Drawing.Font("Calibri", 10F);
+            this.buttonCS.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.buttonCS.Location = new System.Drawing.Point(238, 293);
+            this.buttonCS.Name = "buttonCS";
+            this.buttonCS.Size = new System.Drawing.Size(75, 36);
+            this.buttonCS.TabIndex = 17;
+            this.buttonCS.Text = "CS";
+            this.buttonCS.UseVisualStyleBackColor = false;
+            this.buttonCS.Click += new System.EventHandler(this.buttonCS_Click);
             // 
-            // button3
+            // buttonIT
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Calibri", 10F);
-            this.button3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.button3.Location = new System.Drawing.Point(319, 241);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 36);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "IT";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonIT.BackColor = System.Drawing.Color.Transparent;
+            this.buttonIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonIT.Font = new System.Drawing.Font("Calibri", 10F);
+            this.buttonIT.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.buttonIT.Location = new System.Drawing.Point(320, 293);
+            this.buttonIT.Name = "buttonIT";
+            this.buttonIT.Size = new System.Drawing.Size(75, 36);
+            this.buttonIT.TabIndex = 18;
+            this.buttonIT.Text = "IT";
+            this.buttonIT.UseVisualStyleBackColor = false;
+            this.buttonIT.Click += new System.EventHandler(this.buttonIT_Click);
             // 
-            // button6
+            // buttonSM
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Calibri", 10F);
-            this.button6.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.button6.Location = new System.Drawing.Point(157, 283);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 36);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "SM";
-            this.button6.UseVisualStyleBackColor = false;
+            this.buttonSM.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSM.Font = new System.Drawing.Font("Calibri", 10F);
+            this.buttonSM.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.buttonSM.Location = new System.Drawing.Point(157, 335);
+            this.buttonSM.Name = "buttonSM";
+            this.buttonSM.Size = new System.Drawing.Size(75, 36);
+            this.buttonSM.TabIndex = 19;
+            this.buttonSM.Text = "SM";
+            this.buttonSM.UseVisualStyleBackColor = false;
+            this.buttonSM.Click += new System.EventHandler(this.buttonSM_Click);
             // 
-            // button7
+            // buttonAF
             // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Calibri", 10F);
-            this.button7.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.button7.Location = new System.Drawing.Point(238, 283);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 36);
-            this.button7.TabIndex = 20;
-            this.button7.Text = "AF";
-            this.button7.UseVisualStyleBackColor = false;
+            this.buttonAF.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAF.Font = new System.Drawing.Font("Calibri", 10F);
+            this.buttonAF.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.buttonAF.Location = new System.Drawing.Point(238, 335);
+            this.buttonAF.Name = "buttonAF";
+            this.buttonAF.Size = new System.Drawing.Size(75, 36);
+            this.buttonAF.TabIndex = 20;
+            this.buttonAF.Text = "AF";
+            this.buttonAF.UseVisualStyleBackColor = false;
+            this.buttonAF.Click += new System.EventHandler(this.buttonAF_Click);
             // 
-            // button8
+            // buttonPO
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Calibri", 10F);
-            this.button8.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.button8.Location = new System.Drawing.Point(319, 283);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 36);
-            this.button8.TabIndex = 21;
-            this.button8.Text = "PO";
-            this.button8.UseVisualStyleBackColor = false;
+            this.buttonPO.BackColor = System.Drawing.Color.Transparent;
+            this.buttonPO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPO.Font = new System.Drawing.Font("Calibri", 10F);
+            this.buttonPO.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.buttonPO.Location = new System.Drawing.Point(319, 335);
+            this.buttonPO.Name = "buttonPO";
+            this.buttonPO.Size = new System.Drawing.Size(75, 36);
+            this.buttonPO.TabIndex = 21;
+            this.buttonPO.Text = "PO";
+            this.buttonPO.UseVisualStyleBackColor = false;
+            this.buttonPO.Click += new System.EventHandler(this.buttonPO_Click);
             // 
-            // sToggleButton1
+            // AdminToggle
             // 
-            this.sToggleButton1.AutoSize = true;
-            this.sToggleButton1.BackColor = System.Drawing.Color.Transparent;
-            this.sToggleButton1.FlatAppearance.BorderSize = 0;
-            this.sToggleButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sToggleButton1.Location = new System.Drawing.Point(157, 347);
-            this.sToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
-            this.sToggleButton1.Name = "sToggleButton1";
-            this.sToggleButton1.OffBackColor = System.Drawing.Color.Gray;
-            this.sToggleButton1.OffToggleColor = System.Drawing.Color.LightGray;
-            this.sToggleButton1.OnBackColor = System.Drawing.Color.RoyalBlue;
-            this.sToggleButton1.OnToggleColor = System.Drawing.Color.LightGray;
-            this.sToggleButton1.Size = new System.Drawing.Size(45, 22);
-            this.sToggleButton1.TabIndex = 22;
-            this.sToggleButton1.UseVisualStyleBackColor = false;
+            this.AdminToggle.AutoSize = true;
+            this.AdminToggle.BackColor = System.Drawing.Color.Transparent;
+            this.AdminToggle.FlatAppearance.BorderSize = 0;
+            this.AdminToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AdminToggle.Location = new System.Drawing.Point(157, 377);
+            this.AdminToggle.MinimumSize = new System.Drawing.Size(45, 22);
+            this.AdminToggle.Name = "AdminToggle";
+            this.AdminToggle.OffBackColor = System.Drawing.Color.Gray;
+            this.AdminToggle.OffToggleColor = System.Drawing.Color.LightGray;
+            this.AdminToggle.OnBackColor = System.Drawing.Color.RoyalBlue;
+            this.AdminToggle.OnToggleColor = System.Drawing.Color.LightGray;
+            this.AdminToggle.Size = new System.Drawing.Size(45, 22);
+            this.AdminToggle.TabIndex = 22;
+            this.AdminToggle.UseVisualStyleBackColor = false;
+            this.AdminToggle.CheckedChanged += new System.EventHandler(this.AdminToggle_CheckedChanged);
+            // 
+            // comboBoxRole
+            // 
+            this.comboBoxRole.Font = new System.Drawing.Font("Calibri", 10F);
+            this.comboBoxRole.FormattingEnabled = true;
+            this.comboBoxRole.Location = new System.Drawing.Point(157, 242);
+            this.comboBoxRole.Name = "comboBoxRole";
+            this.comboBoxRole.Size = new System.Drawing.Size(237, 29);
+            this.comboBoxRole.TabIndex = 23;
+            this.comboBoxRole.SelectedIndexChanged += new System.EventHandler(this.comboBoxRole_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Calibri", 10F);
+            this.label7.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label7.Location = new System.Drawing.Point(12, 242);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 21);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "JOB TITLE";
             // 
             // AddUser
             // 
@@ -311,13 +342,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(415, 478);
-            this.Controls.Add(this.sToggleButton1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.comboBoxRole);
+            this.Controls.Add(this.AdminToggle);
+            this.Controls.Add(this.buttonPO);
+            this.Controls.Add(this.buttonAF);
+            this.Controls.Add(this.buttonSM);
+            this.Controls.Add(this.buttonIT);
+            this.Controls.Add(this.buttonCS);
+            this.Controls.Add(this.buttonCEO);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -356,12 +389,14 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private Sipaa.Framework.SToggleButton sToggleButton1;
+        private System.Windows.Forms.Button buttonCEO;
+        private System.Windows.Forms.Button buttonCS;
+        private System.Windows.Forms.Button buttonIT;
+        private System.Windows.Forms.Button buttonSM;
+        private System.Windows.Forms.Button buttonAF;
+        private System.Windows.Forms.Button buttonPO;
+        private Sipaa.Framework.SToggleButton AdminToggle;
+        private System.Windows.Forms.ComboBox comboBoxRole;
+        private System.Windows.Forms.Label label7;
     }
 }
